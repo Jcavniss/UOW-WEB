@@ -1,0 +1,21 @@
++-----------------------------------------+
+|                         | Login         |
+|     Company Logo        |               |
+|       Gamerdiary        | Registration  | 
+|                         |               |    
++-----------------------------------------+
+
++-------------+-------------+-------------+
+|   Library   |   Random    |   Calendar  |
+| Manage your | Pick a game | New releases|
+| collection  | to play     |             |
++-------------+-------------+-------------+
+
+Upcoming Releases
+
++------+ +------+ +------+ +------+
+   |Game1| |Game2| |Game3| |Game4|
+                |
+                |
+            pagination 
++------+ +------+ +------+ +------+
