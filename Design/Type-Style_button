@@ -1,0 +1,34 @@
+Theme for web: Indie videogame style
+Colour: Dark theme with 8 bit Colour
+Webname: Gamerdiary
+Web application type: One page
+
+Buttons: 
+Login -> Open a window with email, password, and button enter -> Log in
+Registration -> Open a  window with Email, Password, User name, Terms, button enter -> Window Registration successful, please Login
+Search -> When user enter text, appear list with games with similar name, clickable -> Open Game Page in lowest part of the screen
+Game Library -> Open Game library section under
+Pick a random game -> Open random game page under 
+Upcoming -> Open Upcoming Games section
+<- near buttons Game Library, Pick a random game, Upcoming means  go back within web application
+- > near buttons Game Library, Pick a random game, Upcoming means go forward within web application
+Game -> Game window when clicked changes to the game page
+Main Page -> Open main page under
+Profile -> Open under profile page
+Avatar -> Picture added by users for profile
+Game in list -> Show how many games player have inside their list
+Favorite game -> Show the game logo whitch player chose as favourite
+Game logo -> Logo of the game created by administrator
+Add to list -> By pressing user add game to list (basic status on-hold)
+Make a favourite -> Add game to profile as favourite (only one game can be favourite)
+Status -> Four status: Played, Want to play, On hold, Dropped (Drop-down list)
+Score -> 1 to 10 (Drop-down list)
+Youtube Trailer -> embedded video from YouTube
+Description -> game description written by administrator
+Genre -> Genre of the game shoter/arpg etc.
+Change avatar -> Button that give opportunity to add new avatar for user
+New password -> Input field for user for password changing
+Confirm new password -> Must be the same as new password, for double cheking that user dont make a mistake -> enter must be pressed to apply the changes
+New Username ->  Input field for user for username changing -> enter must be pressed to apply the changes
+Line Played, Want to play, On hold, Dropped -> All 4 are clickable, this is a filter that displays games depending on the user's status
+
