@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GamerDiary — discover, track and choose games.">
+  <title>GamerDiary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <button class="brand" data-home aria-label="Home"><span class="brand__icon">🎮</span><span>Gamer<b>Diary</b></span></button>
+      <div class="auth-actions"><button class="btn btn--ghost" data-modal="login">Login</button><button class="btn btn--primary" data-modal="register">Register</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="search-strip">
+      <div class="container search-wrap">
+        <span class="search-icon">⌕</span>
+        <input id="searchInput" class="search-input" type="search" placeholder="Search" autocomplete="off">
+        <div id="searchResults" class="search-results" hidden></div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
