@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap");
+
 * { box-sizing: border-box; }
 html, body, #root { min-height: 100%; }
 body {
@@ -18,3 +20,26 @@ button { cursor: pointer; }
 }
 .starter h1 { margin: 0; font-size: 42px; }
 .starter p { margin: 0; color: #a0a8c8; }
+
+:root {
+  --background: #0b0c15;
+  --foreground: #e2e4f0;
+  --card: #12141f;
+  --secondary: #1c1e2e;
+  --muted: #6b7299;
+  --primary: #8b5cf6;
+  --primary-strong: #7c3aed;
+  --border: rgba(139, 92, 246, 0.18);
+  --success: #34d399;
+  --danger: #fb7185;
+  --radius: 14px;
+}
+body { font-family: "Inter", sans-serif; background: var(--background); color: var(--foreground); }
+h1, h2, h3, .display { font-family: "Rajdhani", sans-serif; letter-spacing: .02em; }
+.accent { color: var(--primary); }
+.starter-themed {
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(139,92,246,.14), rgba(18,20,31,.96));
+  box-shadow: 0 30px 80px rgba(0,0,0,.35);
+}
