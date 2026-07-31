@@ -1,32 +1,35 @@
 import { Button } from "./Button";
 
-export function GameDetails({ game, onHome, onAdd, inLibrary, onRate, score }) {
-  if (!game) return null;
+export function DiscoverySections({ games, upcoming, randomGame, onRandom, onOpen }) {
+  const featured = randomGame || games[1] || games[0];
   return (
-    <section className="section details">
-      <aside className="panel details-side">
-        <div className="details-logo" style={{ backgroundColor: game.color }}>{game.initials}</div>
-        <div className="platforms">{game.platforms?.map((platform) => <span className="tag" key={platform}>{platform}</span>)}</div>
-      </aside>
-      <article className="panel details-main">
-        <span className="eyebrow">{game.genre}</span>
-        <h1>{game.name}</h1>
-        <div className="game-meta">{game.studio} · {game.releaseDate}</div>
-        <p>{game.description || "Game details will be expanded as the product develops."}</p>
-        <div className="details-actions">
-          <Button variant="secondary" onClick={onHome}>Back to dashboard</Button>
-          {onAdd && <Button onClick={() => onAdd(game)}>{inLibrary ? "Remove from library" : "Add to library"}</Button>}
-          {onRate && (
-            <label className="field">
-              Your score
-              <select value={score || ""} onChange={(event) => onRate(game, Number(event.target.value))}>
-                <option value="">Not rated</option>
-                {[1,2,3,4,5,6,7,8,9,10].map((value) => <option key={value} value={value}>{value}/10</option>)}
-              </select>
-            </label>
+    <section className="section">
+      <div className="section-heading"><div><h2>Discover</h2><p>Choose what to play next.</p></div></div>
+      <div className="discovery-grid">
+        <article className="panel discovery-card">
+          <span className="eyebrow">Random game</span>
+          {featured && (
+            <div className="random-result">
+              <span className="game-logo" style={{ backgroundColor: featured.color }}>{featured.initials}</span>
+              <div><strong>{featured.name}</strong><div className="game-meta">{featured.genre || featured.studio}</div></div>
+            </div>
           )}
-        </div>
-      </article>
+          <div className="header-actions">
+            <Button onClick={onRandom}>Pick another</Button>
+            {featured && <Button variant="secondary" onClick={() => onOpen?.(featured)}>Open</Button>}
+          </div>
+        </article>
+        <article className="panel discovery-card">
+          <span className="eyebrow">Upcoming releases</span>
+          <div className="upcoming-list">
+            {upcoming.map((game) => (
+              <div className="upcoming-row" key={game.id || game.slug}>
+                <strong>{game.name}</strong><span>{game.releaseDate}</span>
+              </div>
+            ))}
+          </div>
+        </article>
+      </div>
     </section>
   );
 }

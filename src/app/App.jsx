@@ -3,10 +3,10 @@ import { AppShell } from "./components/AppShell";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { LibrarySection } from "./components/Library";
-import { DiscoverySections } from "./components/Discoverysections";
-import { GameDetails } from "./components/Gamedetails";
-import { AuthDialog } from "./components/Authdialog";
-import { ArrowButton } from "./components/Arrowbutton";
+import { DiscoverySections } from "./components/DiscoverySections";
+import { GameDetails } from "./components/GameDetails";
+import { AuthDialog } from "./components/AuthDialog";
+import { ArrowButton } from "./components/ArrowButton";
 
 
 
